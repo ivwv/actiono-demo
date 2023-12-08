@@ -5,6 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update && sudo apt upgrade && sudo apt clean
       - run: ls -lsha
       - run: apt install net-tools
       - run: ifconfig
